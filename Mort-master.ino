@@ -8,11 +8,12 @@
 #include <WiFiClient.h>
 #include <WebServer.h>
 #include <ESPmDNS.h>
-#include <Conversion.h>
-#include "qrcode.h"
-#define MAX_BECH32_SIZE 1000
+#include <Conversion.h> // download zip and install https://github.com/micro-bitcoin/uBitcoin (Sketch > Include Library > Add Zip Library)
+#include "qrcode.h" // (Sketch > Inlcude Libraries > Manage Libraries > search *QRCode*)
 #include <WiFiClientSecure.h>
-#include <ArduinoJson.h>
+#include <ArduinoJson.h>// (Sketch > Inlcude Libraries > Manage Libraries > search *arduino json*)
+
+#define MAX_BECH32_SIZE 1000
  
 const char *ssid = "YOUR-WIFI"; //change
 const char *password = "WIFI-PASS"; //change
